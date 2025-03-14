@@ -1,0 +1,53 @@
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #1a1a2e;
+    color: white;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+button {
+    background-color: #ff4d6d;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff1e56;
+}
+
+/* Hiệu ứng hoa hồng */
+.rose {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Rose_icon.svg/512px-Rose_icon.svg.png');
+    background-size: cover;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-50px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
